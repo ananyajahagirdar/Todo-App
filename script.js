@@ -120,13 +120,14 @@ function startTimer(timerValue, buttonElement) {
 
         secondsRemaining--;
 
-        if (secondsRemaining < 0) {
+        if (secondsRemaining == 0) {
             clearInterval(timerIntervalId); // Stop the timer
             buttonElement.disabled = false; // Enable the play button
             buttonElement.style.display = 'block'; 
             const parent = buttonElement.parentNode;
             const pauseButton = parent.querySelector('.btn-pause');
             pauseButton.style.display = 'none'; // Show the Pause button
+            playRingtone(); // Play the ringtone
         }
     }, 1000); // Update every 1 second
 }
@@ -168,4 +169,21 @@ function restartTimer(buttonElement, initialTime) {
     clearInterval(timerIntervalId);
     isTimerPaused = false;
     pausedSecondsRemaining = null;
+}
+
+function playRingtone() {
+    // Get a reference to the audio element
+    const ringtone = document.getElementById('ringtone');
+
+    // Set the initial playback time (e.g., at 10 seconds)
+    ringtone.currentTime = 3; // Set the initial time in seconds
+
+    // Play the audio
+    ringtone.play();
+
+    // Stop the audio after a specific time (e.g., at 20 seconds)
+    setTimeout(() => {
+        ringtone.pause(); // Pause the audio
+    }, 3500); // Stop after 5 seconds (20000 milliseconds)
+
 }
