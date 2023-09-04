@@ -175,5 +175,6 @@ li {
     }  
     .btn-play, resume-btn{
         right: 30px; 
+        text-align:center;
     }
 }
