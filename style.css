@@ -195,4 +195,8 @@ li {
     .btn-play, resume-btn{
         right: 30px; 
     }
+    #input-container{
+    display: flex;
+    justify-content: center;
+}
 }
