@@ -155,7 +155,7 @@ li {
     text-align: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
     h1{
         font-size: 3rem;
     }
@@ -166,15 +166,33 @@ li {
     #timerInput{
         margin-right: 10px;
         width: 25%;
+        font-size: 7px;
+        padding: 5px;
+    }
+    #taskInput{
+        font-size: 7px;
+        padding: 5px;
+        width: 100%;
     }
     .timer-buttons{
         margin-right: 20px;
+    }
+    .btn{  
+        margin-left:15px;
+        font-size: 13px;
+        width: 1.5rem;
+        height: 1.5rem;
+        text-align: center;
+    }
+    #rem-btn{
+        width: 1.5rem;
+        height: 1.4rem;
+        text-align: center;
     }
     .btn-pause{
         right: 30px; 
     }  
     .btn-play, resume-btn{
         right: 30px; 
-        text-align:center;
     }
 }
