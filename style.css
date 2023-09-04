@@ -155,4 +155,25 @@ li {
     text-align: center;
 }
 
-
+@media screen and (max-width: 500px) {
+    h1{
+        font-size: 3rem;
+    }
+    form{
+        width: 90%;
+        padding: 5px;
+    }
+    #timerInput{
+        margin-right: 10px;
+        width: 25%;
+    }
+    .timer-buttons{
+        margin-right: 20px;
+    }
+    .btn-pause{
+        right: 30px; 
+    }  
+    .btn-play, resume-btn{
+        right: 30px; 
+    }
+}
