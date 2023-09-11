@@ -96,6 +96,7 @@ li {
 
 .task {
     width: 50%;
+    border: 1px solid black;
 }
 
 #rem-btn{
@@ -150,7 +151,7 @@ li {
 }
 
 .timer{
-    margin-right: 60px;
+    margin-right: 30px;
     padding-right: 5px;
     width: 100px;
     text-align: center;
