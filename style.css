@@ -96,7 +96,6 @@ li {
 
 .task {
     width: 50%;
-    border: 1px solid black;
 }
 
 #rem-btn{
@@ -155,6 +154,7 @@ li {
     padding-right: 5px;
     width: 100px;
     text-align: center;
+    border: 1px solid black;
 }
 
 @media screen and (max-width: 400px) {
