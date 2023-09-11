@@ -94,7 +94,8 @@ li {
 }
 
 .task {
-    width: 350px;
+    width: 100%;
+    border: 1px solid black;
 }
 
 #rem-btn{
